@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
-import { BreadcrumbModule } from 'primeng/breadcrumb';
+import { MenubarModule } from 'primeng/menubar'
 
 
 
 
 
 @NgModule({
-  exports: [BreadcrumbModule]
+  exports: [
+    MenubarModule
+  ],
 })
 export class PrimeNgModule { }

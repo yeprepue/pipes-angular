@@ -7,21 +7,21 @@ import { AppComponent } from './app.component'
 ;
 import { SharedModule } from 'primeng/api';
 
+
 @NgModule({
   declarations: [
-    AppComponent,
-
+    AppComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    SharedModule
+
+    SharedModule,
   ],
-  exports:[
+  providers: [
 
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
