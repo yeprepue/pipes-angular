@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { PrimeNGConfig} from 'primeng/api'
 
 @Component({
-  selector: 'app-root',
+  selector: 'shared-menu',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = '05-pipesApp';
+    constructor(private primengCofig: PrimeNGConfig){}
 }
