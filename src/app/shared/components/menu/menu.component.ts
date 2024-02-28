@@ -5,6 +5,7 @@ import { MenuItem } from 'primeng/api';
   selector: 'shared-menu',
   templateUrl: './menu.component.html',
   styles: [
+    `@import "primeicons/primeicons.css";`
   ]
 })
 export class MenuComponent {
@@ -12,19 +13,35 @@ export class MenuComponent {
   ngOnInit() {
     this.menuItems = [
       {
-        label: 'Textos y Fechas',
-        icon: 'pi pi-aling-left',
-        routerLink: '',
+        label: 'Pipes de Angular',
+        icon: 'pi pi-desktop',
         items: [
           {
-            label: 'Numeros',
-            icon: 'pi pi-dollars',
+            label: 'Textos y Fechas',
+            icon: 'pi pi-align-left',
+            routerLink: '/'
+          },
+          {
+            label: 'Números',
+            icon: 'pi pi-dollar',
             routerLink: 'numbers'
           },
           {
-            label: 'Uncommon',
+            label: 'No comunes',
             icon: 'pi pi-globe',
             routerLink: 'uncommon'
+          },
+
+        ]
+      },
+      {
+        label: 'Pipes personalizados',
+        icon: 'pi pi-bolt',
+        items: [
+          {
+            label: 'Custom Pipes',
+            icon: 'pi pi-cog',
+            routerLink: 'custom'
           }
         ]
       }

@@ -12,6 +12,7 @@ import localeEsHN from '@angular/common/locales/es-HN';
 import localeFrCA from '@angular/common/locales/fr-CA';
 
 import { registerLocaleData } from '@angular/common';
+import { ToggleCasePipe } from './products/pipes/toggle-case.pipe';
 
 
 
@@ -28,6 +29,7 @@ registerLocaleData(localeFrCA);
     BrowserAnimationsModule,
     AppRoutingModule,
     SharedModule,
+
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'es-HN' }
